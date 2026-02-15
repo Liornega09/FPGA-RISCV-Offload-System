@@ -19,7 +19,7 @@ This repository contains the custom-developed RTL and firmware for the project. 
 
 ## Repository Structure
 
-### Hardware (`/riscv_hw`)
+### Hardware (`/hw/rtl`)
 Contains the SystemVerilog source files for the FPGA logic: 
 `picorv32.v`: The open-source, size-optimized RISC-V (RV32I) soft-processor core
 `avalonmm2aximm_bridge.sv`: Custom FSM-based protocol translator. 
@@ -28,7 +28,7 @@ Contains the SystemVerilog source files for the FPGA logic:
 `avalonmm_mux.sv`: Arbiter for instruction memory access. 
 `riscv_top.sv`: Top-level system integration wrapper.
 
-### Software (`/riscv_sw`)
+### Software (`/sw`)
 Contains the C-based firmware and build system: 
 `/src`: Firmware source code for sideband protocol management.
 `/scripts`: Custom linker scripts for HAPS-80 memory mapping. 
